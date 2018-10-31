@@ -1,0 +1,156 @@
+.mainContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.upperContainer {
+    min-height: 40px;
+    max-height: 40px;
+    height: 40px;
+    display: flex;
+}
+
+.bottomContainer {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.upper-leftContainer {
+    width: 15%;
+    height: 100%;
+}
+
+.upper-rightContainer {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftContainer {
+    width: 15%;
+    height: 100%;
+    /* background: green; */
+    display: flex;
+    flex-direction: row;
+}
+
+.rightContainer {
+    width: 85%;
+    height: fit-content;
+    background: #f4f5f6;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-rightContainer {
+    width: 95%;
+    height: 100%;
+}
+
+.menuItem {
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid #999999; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    color: #627494;
+}
+
+.upper-leftContainer-menuItem {
+    height: 40px;
+    width: 100%;
+    background: #627494;
+    color: white;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.left-leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+}
+
+.right-leftContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-menuItem {
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid #999999; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    color: #627494;
+}
+
+.right-menuItem {
+    height: 40px;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid #999999; */
+    display: flex;
+    font-weight: bold;
+    color: #627494;
+}
+.right-menuItem a {
+    color: #627494 !important;
+}
+
+.hamburgerIcon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    height: inherit;
+    width: 40px;
+}
+
+.top-right-conner {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.bellIcon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    height: inherit;
+    width: 40px;
+}
+
+.wallIcon {
+    width: 5px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    font-size: 23px;
+}
+
+.userNameBox {
+    width: 100px;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}

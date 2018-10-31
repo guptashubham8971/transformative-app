@@ -1,0 +1,78 @@
+<div class="top-row">
+  <div class="top-row-right">
+    HOME
+  </div>
+  <div class="top-row-left">
+    <input placeholder="Datepicker" bsDatepicker [isOpen]="isOpen2" style="width:0px; border-width:0px;margin-right: 50px;" />
+    <button type="button" class="btn btn-light" value="Toggle" (click)="isOpen2 = !isOpen2" style="border: 1px solid #cccccc;">Today
+      <span style="margin: 0 0 0 10px;"><i class="fas fa-calendar-alt"></i></span></button>
+  </div>
+</div>
+<div class="row topBlockRow">
+  <div class="topBlock" style="margin-left: 0px;">
+
+  </div>
+  <div class="topBlock">
+
+  </div>
+  <div class="topBlock">
+
+  </div>
+  <div class="topBlock">
+
+  </div>
+  <div class="topBlock" style="width:40%;margin-right: 0px;">
+
+  </div>
+</div>
+
+<div class="row middleBlockRow">
+  <div class="middleBlock">
+    <div class="middle-part-1">
+      <div class="hed-1">
+        Number of Sales
+      </div>
+      <div class="hed-2">
+        <input placeholder="Datepicker" bsDatepicker [isOpen]="isOpen1" style="width:0px; border-width:0px;" />
+        <button type="button" class="btn btn-light" value="Toggle" (click)="isOpen1 = !isOpen1" style="height: 75%;border: 1px solid #cccccc;">Today
+          <span style="margin: 0 0 0 10px;"><i class="fas fa-calendar-alt"></i></span></button>
+      </div>
+    </div>
+    <div class="middle-part-2">
+      <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions" style="width: 100%; height: 100%; display: block;"></highcharts-chart>
+    </div>
+  </div>
+
+  <div class="middleBlock" style="margin-right: 0px;">
+    <div class="middle-part-1">
+      <div class="hed-1">
+        Revenue
+      </div>
+      <div class="hed-2">
+        <input placeholder="Datepicker" bsDatepicker [isOpen]="isOpen" style="width:0px; border-width:0px;" />
+        <button type="button" class="btn btn-light" value="Toggle" (click)="isOpen = !isOpen" style="height: 75%;border: 1px solid #cccccc;">Monthly
+          <span style="margin: 0 0 0 10px;"><i class="fas fa-calendar-alt"></i></span></button>
+      </div>
+    </div>
+    <div class="middle-part-2">
+      <highcharts-chart [Highcharts]="Highcharts" [options]="barChartOptions" style="width: 100%; height: 100%; display: block;"></highcharts-chart>
+    </div>
+  </div>
+</div>
+
+<div class="row bottomBlockRow">
+  <div class="bottomBlock" style="margin-left: 0px;">
+    <div class="middle-part-1">
+      <div class="hed-1">
+        Product Details
+      </div>
+    </div>
+  </div>
+  <div class="bottomBlock" style="width:70%;margin-right: 0px;">
+    <div class="middle-part-1">
+      <div class="hed-1">
+        Top Selling Item
+      </div>
+    </div>
+  </div>
+</div>

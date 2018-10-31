@@ -1,0 +1,47 @@
+<div class="mainContainer">
+  <div class="upperContainer">
+    <div class="upper-leftContainer" [ngStyle]="{'width': openMenuBar ? '15%' : '0%' }">
+      <div class="upper-leftContainer-menuItem">
+        TRANSFORMATIVE
+      </div>
+    </div>
+    <div class="upper-rightContainer" [ngStyle]="{'width': openMenuBar ? '85%' : '100%' }">
+
+      <div class="hamburgerIcon" (click)="toogleMenubar()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="top-right-conner">
+        <div class="bellIcon">
+          <i class="far fa-bell"></i>
+        </div>
+        <div class="wallIcon">|</div>
+        <div class="userNameBox">
+          John Doe
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="bottomContainer">
+    <div class="leftContainer" [ngStyle]="{'width': openMenuBar ? '15%' : '40px' }">
+      <div class="left-leftContainer">
+        <div class="left-menuItem" *ngFor="let menu of menuOption">
+          <div [routerLink]="menu.path">
+              <i [ngClass]="menu.icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="right-leftContainer" [ngStyle]="{'width': openMenuBar ? '80%' : '0%' }">
+        <div class="right-menuItem" *ngFor="let menu of menuOption">
+          <a [routerLink]="menu.path">{{menu.name}}</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="rightContainer" [ngStyle]="{'width': openMenuBar ? '85%' : '100%' }">
+      <div class="inner-rightContainer">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

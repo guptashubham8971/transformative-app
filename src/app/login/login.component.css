@@ -1,0 +1,47 @@
+.mainContainer {
+  height: 90%;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container1 {
+  background: #c2c2c23b;
+  height: inherit;
+  width: 40%;
+}
+.container2 {
+  background: #555555;
+  height: inherit;
+  width: 60%;
+}
+.row1 {
+  /* background: green; */
+  height: 20%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.row2 {
+  /* background: greenyellow; */
+  height: 60%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.row3 {
+  /* background: paleturquoise; */
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-family: Impact;
+  font-weight: bold;
+}
